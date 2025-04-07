@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>个人简历</title>
+    <!-- 引入Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 页面整体样式 */
+        body {
+            margin: 0;
+            padding: 40px;
+            background: url('background.jpg') no-repeat center fixed;
+            background-size: cover;
+            font-family: 'Microsoft YaHei', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 表格容器样式 */
+        .resume-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            padding: 20px;
+        }
+
+        /* 表格样式 */
+        .resume-table {
+            width: 800px;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        /* 表格标题 */
+        caption {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        /* 单元格通用样式 */
+        td, th {
+            border: 1px solid #ddd;
+            padding: 15px;
+            vertical-align: middle;
+        }
+
+        /* 图标样式 */
+        .icon {
+            color: #3498db;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        /* 照片单元格 */
+        .photo-cell {
+            width: 150px;
+            height: 200px;
+            background: #f8f9fa;
+            text-align: center;
+            position: relative;
+        }
+
+        /* 照片样式 */
+        .photo-cell img {
+            width: 140px;
+            height: 180px;
+            object-fit: cover;
+            border: 2px solid #eee;
+            border-radius: 4px;
+        }
+
+        /* 小标题样式 */
+        .section-title {
+            background: #f8f9fa;
+            font-weight: bold;
+        }
+
+        /* 悬浮效果 */
+        .photo-cell img:hover {
+            transform: scale(1.03);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <table class="resume-table">
+            <caption>个人简历</caption>
+
+            <!-- 基本信息 -->
+            <tr>
+                <th colspan="2">姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+            </tr>
+
+            <tr>
+                <td rowspan="4" class="photo-cell">
+                    <img src="lab3.bmp.jpg" alt="个人证件照">
+                </td>
+                <td><i class="fas fa-map-marker-alt icon"></i>籍贯</td>
+                <td colspan="2">湖南长沙</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-mobile-alt icon"></i>联系电话</td>
+                <td colspan="2">15576649018</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-envelope icon"></i>电子邮箱</td>
+                <td colspan="2">2701259018@qq.com</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-graduation-cap icon"></i>学历</td>
+                <td colspan="2">本科</td>
+            </tr>
+
+            <!-- 其他信息 -->
+            <tr>
+                <td><i class="fas fa-heartbeat icon"></i>健康状况</td>
+                <td>良好</td>
+                <td><i class="fas fa-user-friends icon"></i>婚姻状况</td>
+                <td>未婚</td>
+            </tr>
+
+            <!-- 求职意向 -->
+            <tr class="section-title">
+                <td colspan="4"><i class="fas fa-briefcase icon"></i>求职意向</td>
+            </tr>
+            <tr>
+                <td colspan="4">法律顾问</td>
+            </tr>
+
+            <!-- 教育背景 -->
+            <tr class="section-title">
+                <td colspan="4"><i class="fas fa-university icon"></i>教育背景</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-book icon"></i>专业</td>
+                <td colspan="3">软件工程</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-graduation-cap icon"></i>毕业院校</td>
+                <td colspan="3">鲁东大学</td>
+            </tr>
+
+            <!-- 技能证书 -->
+            <tr class="section-title">
+                <td colspan="4"><i class="fas fa-certificate icon"></i>技能证书</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <ul>
+                        无
+                    </ul>
+                </td>
+            </tr>
+
+            <!-- 项目经历 -->
+            <tr class="section-title">
+                <td colspan="4"><i class="fas fa-project-diagram icon"></i>项目经历</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    无
+                </td>
+            </tr>
+
+            <!-- 自我评价 -->
+            <tr class="section-title">
+                <td colspan="4"><i class="fas fa-comment-dots icon"></i>自我评价</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p>•我是一个容易接受新事物的人，能快速面对迭代的时代坏境，面对工作中的变化与挑战，迅速接纳新事物。</p >
+                    <p>• 有着强烈的自我认知和使命感，对待任务认真负责，一旦接受工作安排，定会全力以赴，争取尽我所能做到最好</p >
+					<p>·善于调节情绪，乐观开朗，能够与他人友好相处，乐于帮助他人，营造良好和谐的环境。</p>
+					<p>·善于倾听他人意见，合理发挥自我优势，与别人携手共进，推动公司发展</p>
+					<p>·在大学期间积累了专业知识，能够发挥作用。</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html> 
